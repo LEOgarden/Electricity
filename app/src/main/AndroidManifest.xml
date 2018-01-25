@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.leo.electricity">
+
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="耒阳电力掌营业厅"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="847c9397ee97995b3b5227c9bd30d8a1" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <service android:name=".activity.service.UserService" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.user.SetupActivity" />
+        <activity android:name=".activity.user.DepartmentListActivity" />
+        <activity android:name=".activity.user.ServerPointActivity" />
+        <activity android:name=".activity.user.ElectricKnowledgeActivity" />
+        <activity android:name=".activity.ShowTextActivity" />
+        <activity android:name=".activity.home.ElectricUsedActivity" />
+        <activity android:name=".activity.home.BillRecordActivity" />
+        <activity android:name=".activity.home.NoticeActivity" />
+        <activity
+            android:name=".activity.usepower.PayActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name=".activity.home.AnnualDetailActivity" />
+        <activity android:name=".activity.usepower.RechargeActivity" />
+        <activity android:name=".activity.usepower.ApplyActivity" />
+        <activity android:name=".activity.home.CheckActivity" />
+        <activity android:name=".activity.home.ArrearageActivity" />
+        <activity android:name=".activity.home.ArrearageUserListActivity" />
+        <activity android:name=".activity.home.BindActivity" />
+        <activity android:name=".activity.user.UnbindActivity" />
+        <activity android:name=".activity.home.CustomerInfoActivity" />
+        <activity android:name=".activity.home.PowerUserListActivity" />
+        <activity android:name=".activity.home.RecordUserListActivity" />
+        <activity
+            android:name=".activity.user.ModifyActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.user.ConsultActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.user.SuggestActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.user.TypeActivity" />
+        <activity android:name=".activity.user.SuggestBehaviorActivity" />
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.user.ChangePwdValCodeActivity" />
+        <activity android:name=".activity.user.AboutSystemActivity" />
+        <activity android:name=".wxapi.WXPayEntryActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity android:name=".FunctionUnableActivity" />
+        <activity android:name=".activity.usepower.PaymentActivity"></activity>
+    </application>
+
+</manifest>

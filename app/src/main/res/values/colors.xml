@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009bff</color>
+    <color name="colorPrimaryDark">#009bff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_isSelected">#1bbc9b</color>
+    <color name="color_notSelect">#515151</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_red">#FF5722</color>
+    <color name="color_orange">#FF9800</color>
+    <color name="color_yellow">#FFC107</color>
+    <color name="color_green">#3FB830</color>
+    <color name="color_blue">#009bff</color>
+    <color name="color_dark">#263238</color>
+    <color name="color_dark_light">#455A64</color>
+    <color name="primary">#00b4aa</color>
+    <color name="primaryDark">#00978f</color>
+    <color name="color_light">#ECEFF1</color>
+    <color name="color_gray_light">#d3d3d3</color>
+    <color name="color_green_light">#3cb371</color>
+
+    <!--案例-->
+    <color name="navpage">#FFE1E8EB</color>
+</resources>

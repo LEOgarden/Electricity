@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.leo.electricity.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/location_imageview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/location_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/location_imageview"
+            android:text="位置信息"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="掌上营业厅"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/turn_to_loginactivity_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="#f7f7f7">
+
+        <RadioButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/but_home_selector"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="首页"
+            android:textColor="@color/radiobutton_textcolor_selector"
+            android:textSize="8dp" />
+
+        <RadioButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="用电"
+            android:textSize="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/but_power_selector"
+            android:textColor="@color/radiobutton_textcolor_selector"
+            android:padding="2dp" />
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="用户"
+            android:textSize="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/but_user_selector"
+            android:textColor="@color/radiobutton_textcolor_selector"
+            android:padding="2dp"/>
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

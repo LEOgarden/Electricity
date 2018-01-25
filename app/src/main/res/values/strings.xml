@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Electricity</string>
+    <string name="toolbar_title">掌上营业厅</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">密码(6-12位英文或数字)</string>
+    <string name="phone">手机号</string>
+    <string name="next">注册</string>
+    <string name="valCode">验证码</string>
+    <string name="fast_bind">快捷绑定</string>
+    <string name="hand_bind">手动绑定</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="about_us">  “售电云平台”是深圳市迪科巨图科技有限公司为公众提供更为快捷方便的掌上电力服务系统，
+        具备在线支付购电、用电查询、网点查询等功能，为广大客户提供及时贴心的电力服务。
+    </string>
+
+    <!--案例-->
+    <string name="app_tip">提示</string>
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="goto_pay">跳转到支付界面</string>
+    <string name="goto_fav">跳转到收藏界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+</resources>

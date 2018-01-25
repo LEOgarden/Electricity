@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="android.leo.electricity.fragment.HomeFragment">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ad_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp">
+
+        <View
+            android:id="@+id/dot0"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/dot_color" />
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/dot" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/dot" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/dot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/check_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_viewpager"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <Button
+                android:id="@+id/electricityAndCharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/power_charge"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="电量电费"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+            <Button
+                android:id="@+id/bill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/bill"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="购电记录"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/notice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/notice"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="停电公告"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/check"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="用户查询"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="4dp">
+            <Button
+                android:id="@+id/arrearage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/arrearage"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="欠费记录"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+            <Button
+                android:id="@+id/severPoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/severpoint"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="服务网点"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/operation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/operation"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="业务办理"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/fastPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape4"
+                android:button="@null"
+                android:drawablePadding="9dp"
+                android:drawableTop="@drawable/fast"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="快速缴费"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/check_linear"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/question"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/question" />
+
+            <TextView
+                android:id="@+id/question_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/question"
+                android:text="客户编号"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_text1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/question"
+                android:text="如何获取 >"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bind_num_r"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/bindimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/question" />
+
+            <TextView
+                android:id="@+id/bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/bindimage"
+                android:text="绑定户号"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bind"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/bindimage"
+                android:text="用电尽在掌握 >"
+                android:textSize="8dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

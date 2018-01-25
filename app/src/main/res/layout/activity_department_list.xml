@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="android.leo.electricity.activity.user.DepartmentListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <LinearLayout
+                android:id="@+id/back_Image"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/back3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/server_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="网点"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/department_linear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/back_Image"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_shape"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/department_textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:hint="选择管理单位"
+                android:textSize="15dp"
+                android:textColor="#474747"/>
+
+            <ImageButton
+                android:id="@+id/popup_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:src="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="网点选择"
+        android:textSize="12dp"
+        android:textColor="#696969"
+        android:layout_marginLeft="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#696969"
+        android:layout_marginTop="5dp"/>
+
+    <ListView
+        android:id="@+id/serverPoint_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"/>
+</LinearLayout>
